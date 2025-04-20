@@ -1,0 +1,23 @@
+{
+  "name": "playwright_own_framework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Prasadh",
+  "license": "ISC",
+  "description": "Playwright + Cucumber + TypeScript automation framework",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.0.0",
+    "@types/chai": "^5.2.1",
+    "@types/node": "^20.0.0",
+    "chai": "^4.3.7",
+    "playwright": "^1.52.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
+  },
+  "scripts":{
+    "test": "cucumber-js",
+    "test:headed": "cucumber-js --world-parameters '{\"headless\": false}'",
+    "test:headless": "cucumber-js --world-parameters '{\"headless\": true}'"
+  }
+}
